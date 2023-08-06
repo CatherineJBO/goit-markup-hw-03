@@ -87,8 +87,7 @@ img {
 }
 .hero-header {
     margin: 0 auto;
-    width: 496px;
-    padding-top: 188px;
+    max-width: 496px;
     padding-bottom: 64px;
     font-size: 56px;
     line-height: 1.07;
@@ -155,6 +154,7 @@ img {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
+    padding: 188px 0;
 }
 .button {
     font-family: "Roboto", sans-serif;
@@ -170,10 +170,8 @@ img {
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 188px;
-    margin-left: auto;
+    display: block;
+    margin: 0 auto;
     min-height: 56px;
     min-width: 169px;
 }
@@ -256,23 +254,26 @@ img {
 
 .footer{
     background-color: var(--navy-blue);
-    padding-top: 100px;
-    padding-bottom: 188px;
-    padding-left: 156px;
+    padding: 100px 0;
+}
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .footer .subtle-text {
     color: var(--cloud);
     width: 264px;
     padding-top: 16px;
 }
-.portfolio-container {
-    padding: 120px 0;
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 .portfolio-button-list {
     display: flex;
     gap: 24px;
     justify-content: center;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 .portfolio-button {
     font-family: Roboto, sans-serif;
@@ -295,6 +296,7 @@ img {
     color: var(--white);
     border-radius: 4px;
     padding: 12px 24px;
+    border: 1px solid transparent;
 }
 .list {
     list-style: none;
