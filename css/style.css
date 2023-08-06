@@ -19,11 +19,7 @@ body {
     background-color: var(--white);
 
 }
-.wrapper {
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+
 
 a {
     text-decoration: none;
@@ -178,9 +174,13 @@ img {
     letter-spacing: 0.72px;
     text-transform: capitalize;
 }
-.benefits-container {
-    width: 1158px;
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
     padding: 0 15px;
+}
+.benefits {
+    padding: 120px 0;
 }
 .benefits-list {
     display: flex;
