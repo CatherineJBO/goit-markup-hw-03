@@ -9,8 +9,6 @@
     --cloud: #f4f4fd;
     --cornflower: #e7e9fc;
     --ocean: #404bbf;
-    --indent: 24px;
-    --items: 3;
 
 }
 
@@ -316,15 +314,15 @@ border-top: none;
 .card-set-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: var(--indent);
+    column-gap: 24px;
 }
 .card-set-item {
-    flex-basis: calc((100% - var(--indent) * 2) / var(--items));
+    flex-basis: calc((100% - 24px * 2) / 3);
 }
 .card-examples-gap {
     row-gap: 48px;
 }
 .card-set-item-team {
-    flex-basis: calc((100% - var(--indent) * 3) / (var(--items) +1));
+    flex-basis: calc((100% - 24px * 3) / 4);
 }
 
