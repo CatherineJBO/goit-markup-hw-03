@@ -31,7 +31,7 @@ a {
 
 ul {
     margin: 0;
-    padding-left: 0;
+    padding: 0;
     list-style-type: none;
 }
 h1,
@@ -42,6 +42,7 @@ h5,
 h6,
 p {
     margin: 0;
+    padding: 0;
 }
 img {
     max-width: 100%;
@@ -124,7 +125,6 @@ img {
     color: var(--ocean)
 }
 .hero {
-    height: 600px;
     background-color: var(--navy-blue);
     color: var(--white);
     text-align: center;
@@ -168,6 +168,7 @@ img {
     letter-spacing: 0.02em;
 }
 .section-header {
+    margin-bottom: 72px;
     color: var(--navy-blue);
     text-align: center;
     font-size: 36px;
@@ -177,8 +178,16 @@ img {
     letter-spacing: 0.72px;
     text-transform: capitalize;
 }
-.benefits-text {
-    width: 264px;
+.benefits-container {
+    width: 1158px;
+    padding: 0 15px;
+}
+.benefits-list {
+    display: flex;
+    gap: 24px;
+}
+.benefits-list-item {
+    flex-basis: calc((100% - 24px * 3) / 4);
 }
 
 
@@ -255,3 +264,10 @@ padding-bottom: 32px;
 border: 1px solid var(--cornflower);
 border-top: none;
 }
+.container-header {
+    padding: 16px;
+}
+.container {
+    padding: 72px;
+}
+
